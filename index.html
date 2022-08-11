@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <div class="main-container">
+      <img src="./images/icon-star.svg" alt="" />
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <ul>
+        <li><button class="button">1</button></li>
+        <li><button class="button">2</button></li>
+        <li><button class="button">3</button></li>
+        <li><button class="button">4</button></li>
+        <li><button class="button">5</button></li>
+      </ul>
+      <button class="button-submit" id="submit">Submit</button>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <div class="thank-you-state hidden">
+      <img src="./images/illustration-thank-you.svg" alt="" />
+      <p class="result">You selected <span id="rating">5</span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+      <button class="button-submit" id="rate-again">Rate again!</button>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/onurozbey" target="_blank">Onur Özbey</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
